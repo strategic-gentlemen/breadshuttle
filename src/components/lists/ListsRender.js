@@ -20,9 +20,11 @@ const ListRender = (props) => {
   const mapListItems = () => {
     return dummyLists.map(list => {
       return (
-        <ListCard 
-          listName={list.listName}
-        />
+        <div key={list.id}>
+          <ListCard 
+            listName={list.listName}
+          />
+        </div>
       )
     })
   }
