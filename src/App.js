@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="App">
       {
-        window.location !== '/login' && window.location !== '/register' ?
+        window.location.pathname !== '/login' && window.location.pathname !== '/register' ?
         <Nav /> :
         null
       }

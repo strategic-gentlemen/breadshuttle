@@ -1,6 +1,13 @@
 @import '../globalVariables.scss';
 
-.testing {
-  font-size: 60px;
-  color: $orange
+.lists-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: $secondary-blue;
+  height: 100vh;
+
+  h1 {
+    color: $orange
+  }
 }
