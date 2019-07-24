@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Login = (props) => {
+const Register = (props) => {
   return (
     <div className='auth-container'>
       <div>
@@ -19,13 +19,14 @@ const Login = (props) => {
           <input type='password'/>
 
         </div>
-        <button>login</button>
+        <button>Register</button>
       </div>
       or
-      <a href='/register'>Register</a>
+      <a href='/login'>Login</a>
+      
 
     </div>
   );
 }
 
-export default Login;
+export default Register;
