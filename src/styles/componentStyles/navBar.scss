@@ -1,0 +1,19 @@
+@import '../globalVariables.scss';
+
+.nav-container {
+  padding: 5px 10px;
+  height: 40px;
+  background-color: $main-blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    color: $orange;
+    font-size: 35px
+  }
+
+  img {
+    height: 35px
+  }
+}

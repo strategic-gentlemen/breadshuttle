@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.scss';
 import routes from './routes';
-
-const breadshuttle = '/assets/breadshuttle.png';
+import Nav from './components/common/NavBar';
 
 function App() {
   return (
     <div className="App">
-      <h1 className='cooltext'>BreadShuttle</h1>
-      <img src={breadshuttle} alt=''/>
+      {
+        window.location !== '/login' && window.location !== '/register' ?
+        <Nav /> :
+        null
+      }
       {routes}
     </div>
   );
