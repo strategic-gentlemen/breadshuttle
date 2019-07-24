@@ -7,8 +7,6 @@ const breadshuttle = '/assets/breadshuttle.png';
 function App() {
   return (
     <div className="App">
-      <h1 className='cooltext'>BreadShuttle</h1>
-      <img src={breadshuttle} alt=''/>
       {routes}
     </div>
   );
