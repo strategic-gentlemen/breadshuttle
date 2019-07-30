@@ -16,4 +16,19 @@
   img {
     height: 35px
   }
+
+  .drawer {
+    background: $yellow;
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 21px;
+        color: white;
+        margin-bottom: 20px
+      }
+    }
+  }
+
 }
