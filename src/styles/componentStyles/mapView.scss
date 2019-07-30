@@ -1,0 +1,22 @@
+.map-container{
+    background-image: url('https://media.wired.com/photos/59269cd37034dc5f91bec0f1/master/pass/GoogleMapTA.jpg');
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top-container{
+        height: 100%;
+    };
+    .expanded{
+        height: 90vh;
+        width: 100vw;
+        transition-duration: 1.2s;
+    };
+    .not-expanded{
+        height: 10vh;
+        width: 100vw;
+        transition-duration: 1s;
+    };
+}
