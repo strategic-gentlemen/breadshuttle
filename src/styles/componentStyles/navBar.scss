@@ -17,8 +17,16 @@
     height: 35px
   }
 
+  h3 {
+    font-family: 'Pacifico', cursive;
+    color: $orange;
+    width: 60vw;
+    font-size: 26px;
+    text-align: center;
+  }
+
   .drawer {
-    background: $white;
+    background: $orange;
 
     ul {
       list-style: none;

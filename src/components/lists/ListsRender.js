@@ -9,33 +9,34 @@ import { actions as commonActions } from '../../modules/common/actions';
 const dummyLists = [
   {
     id: 1,
-    listName: 'test1',
+    listName: 'Test List 1',
     items: [1,2,3,4],
     creationDate: '07/20/2019',
     lastEditedBy: 'Justus'
   },
   {
     id: 2,
-    listName: 'test2',
+    listName: 'Test List 2',
     items: [1],
     creationDate: '07/20/2019',
     lastEditedBy: 'Justus'
   },
   {
     id: 3,
-    listName: 'test3',
+    listName: 'Test List 3',
     items: [1,2,3,4,5,6,7],
     creationDate: '07/20/2019',
     lastEditedBy: 'You'
   }
 ];
 
-const mapListItems = () => {
+const mapListItems = (props) => {
   return dummyLists.map(list => {
     return (
       <div key={list.id}>
         <ListCard 
           list={list}
+          edit={() => props.push(`/edit-list/${list.id}`)}
         />
       </div>
     )
@@ -50,18 +51,11 @@ const ListRender = (props) => {
         <SubNav 
           title='My Lists'
           add
+          addType="list"
           addFunction={() => props.push('/add-list')}
         />
-        {/* <h1>My Lists</h1>
-        <Link to='/addList'>
-          <Button
-            title='Create List'
-            onClick={() => null}
-            type='primary'
-          />
-        </Link> */}
       </div>
-      {mapListItems()}
+      {mapListItems(props)}
     </div>
   );
 }

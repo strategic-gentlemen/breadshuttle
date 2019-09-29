@@ -1,5 +1,5 @@
 import React from 'react';
-import StoreCard from './StoreCard';
+// import StoreCard from './StoreCard';
 
 const StoresRender = (props) => {
   const dummyList =[

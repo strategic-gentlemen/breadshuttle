@@ -18,6 +18,7 @@ const NavBar = (props) => {
   return (
     <div className="nav-container">
       <img src={logo} alt='breadshuttle' />
+      <h3>Bread Shuttle</h3>
       <i 
         className="fas fa-user"
         onClick={() => handleMenuToggle()}

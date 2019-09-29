@@ -1,0 +1,18 @@
+@import '../globalVariables.scss';
+
+.footer {
+  height: 80px;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+
+  button {
+    height: 50px;
+    width: 70vw;
+    background-color: $dark-green;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px
+  }
+}
