@@ -19,7 +19,7 @@ const NavBar = (props) => {
     <div className="nav-container">
       <img src={logo} alt='breadshuttle' />
       <i 
-        className="fas fa-bars"
+        className="fas fa-user"
         onClick={() => handleMenuToggle()}
       />
       <Drawer 

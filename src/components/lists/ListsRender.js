@@ -1,7 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { push } from 'react-router-redux';
+import { bindActionCreators } from 'redux';
+import { connect } from 'react-redux';
 import ListCard from './ListCard';
-import Button from '../common/Button';
+import SubNav from '../common/SubNav';
+import { actions as commonActions } from '../../modules/common/actions';
 
 const dummyLists = [
   {
@@ -44,18 +47,36 @@ const ListRender = (props) => {
   return (
     <div className="lists-container">
       <div>
-        <h1>My Lists</h1>
+        <SubNav 
+          title='My Lists'
+          add
+          addFunction={() => props.push('/add-list')}
+        />
+        {/* <h1>My Lists</h1>
         <Link to='/addList'>
           <Button
             title='Create List'
             onClick={() => null}
             type='primary'
           />
-        </Link>
+        </Link> */}
       </div>
       {mapListItems()}
     </div>
   );
 }
 
-export default ListRender;
+const mapStateToProps = (state) => ({
+  testState: state.common.testState,
+});
+
+const mapDispatchToProps = dispatch => 
+  bindActionCreators(
+    {
+      push,
+      testAction: commonActions.test.request
+    },
+    dispatch
+  )
+
+export default connect(mapStateToProps, mapDispatchToProps)(ListRender);

@@ -3,7 +3,7 @@
 .auth-container {
     height: 100vh;
     width: 100vw;
-    background-color: $secondary-blue;
+    background-color: $white;
     // background: linear-gradient(170deg, $secondary-blue, 90%, $main-blue);
     display: flex;
     flex-direction: column;
@@ -67,7 +67,7 @@
         height: 80px;
     }
     .auth-input {
-        border-bottom: 1px solid $orange;
+        border-bottom: 1px solid $blue;
         width: 70vw;
         height: 3vh;
         max-width: 250px;
@@ -79,7 +79,7 @@
         
     };
     .icon-box{
-        border-right: 1px solid $orange;
+        border-right: 1px solid $blue;
         height: 100%;
         width: 10%;
         box-shadow: 5px 0 5px -5px rgba(0,0,0,0.27);

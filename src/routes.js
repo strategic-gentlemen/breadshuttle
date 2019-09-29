@@ -15,8 +15,8 @@ export default (
     <Route exact path='/profile' component={Profile} />
     <Route exact path='/login' component={Login} />
     <Route exact path='/register' component={Register} />
-    <Route exact path='/map' component={MapView} />
-    <Route exact path='/editList/:id' component={EditList} />
-    <Route exact path='/addList' component={AddList} />
+    <Route exact path='/map/:id' component={MapView} />
+    <Route exact path='/edit-list/:id' component={EditList} />
+    <Route exact path='/add-list' component={AddList} />
   </Switch>
 )

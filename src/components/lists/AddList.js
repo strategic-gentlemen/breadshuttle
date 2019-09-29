@@ -1,9 +1,16 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Input from '../common/Input';
 
 const AddList = (props) => {
+  const [listTitle, titleChange] = useState('');
+
   return (
-    <div>
-      AddList Page
+    <div className="lists-container">
+      <label htmlFor='title'>Title</label>
+      <Input
+        id='title'
+        onChange={titleChange}
+      />
     </div>
   )
 }

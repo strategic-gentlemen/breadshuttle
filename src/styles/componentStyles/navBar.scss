@@ -3,13 +3,13 @@
 .nav-container {
   padding: 5px 10px;
   height: 40px;
-  background-color: $main-blue;
+  background-color: $blue;
   display: flex;
   align-items: center;
   justify-content: space-between;
 
   i {
-    color: $orange;
+    color: $gray;
     font-size: 35px
   }
 
@@ -18,7 +18,7 @@
   }
 
   .drawer {
-    background: $yellow;
+    background: $white;
 
     ul {
       list-style: none;
