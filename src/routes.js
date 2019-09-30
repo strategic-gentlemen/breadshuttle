@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router-dom';
 import ListRender from './components/lists/ListsRender';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import RegisterStep2 from './components/register/RegisterStep2';
 import MapView from './components/map/MapView';
 import Profile from './components/users/Profile';
 import EditList from './components/lists/EditList';
@@ -15,6 +16,7 @@ export default (
     <Route exact path='/profile' component={Profile} />
     <Route exact path='/login' component={Login} />
     <Route exact path='/register' component={Register} />
+    <Route exact path='/register2' component={RegisterStep2}/>
     <Route exact path='/map' component={MapView} />
     <Route exact path='/editList/:id' component={EditList} />
     <Route exact path='/addList' component={AddList} />
