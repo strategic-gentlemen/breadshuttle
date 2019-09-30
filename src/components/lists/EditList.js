@@ -36,6 +36,7 @@ const mapListItems = () => {
         itemName={item.itemName}
         qty={item.qty}
         cost={(item.qty * item.costPerUnit).toFixed(2)}
+        key={item.itemName}
       />
     )
   })

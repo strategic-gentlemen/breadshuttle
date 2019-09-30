@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Switch, Route } from 'react-router';
 import ListRender from './components/lists/ListsRender';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
@@ -17,6 +17,7 @@ export default (
     <Route exact path='/register' component={Register} />
     <Route exact path='/map/:id' component={MapView} />
     <Route exact path='/edit-list/:id' component={EditList} />
+    <Route exact path='/share-list:id' component={EditList} />
     <Route exact path='/add-list' component={AddList} />
   </Switch>
 )
