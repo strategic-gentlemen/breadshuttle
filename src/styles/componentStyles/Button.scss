@@ -1,0 +1,49 @@
+@import '../globalVariables.scss';
+
+.button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: none;
+  min-width: 300px;
+  max-width: 300px;
+  max-height: 40px;
+  overflow: hidden;
+  cursor: pointer;
+  padding: 25px 80px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+}
+
+.primary {
+  background-color: $dark-green;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: $lime-green
+}
+
+.secondary {
+  background-color: $gray;
+  color: white;
+}
+
+.secondary:hover {
+  background-color: $white
+}
+
+.cancel {
+  background-color: $gray;
+  color: white;
+}
+
+.cancel:hover {
+  background-color: $white
+}

@@ -1,0 +1,42 @@
+@import '../globalVariables.scss';
+
+.nav-container {
+  padding: 5px 10px;
+  height: 40px;
+  background-color: $blue;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  i {
+    color: $gray;
+    font-size: 35px
+  }
+
+  img {
+    height: 35px
+  }
+
+  h3 {
+    font-family: 'Pacifico', cursive;
+    color: $orange;
+    width: 60vw;
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .drawer {
+    background: $orange;
+
+    ul {
+      list-style: none;
+
+      li {
+        font-size: 21px;
+        color: white;
+        margin-bottom: 20px
+      }
+    }
+  }
+
+}

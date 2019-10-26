@@ -1,0 +1,8 @@
+@import '../globalVariables.scss';
+
+.lists-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // background-color: $secondary-blue;
+}
