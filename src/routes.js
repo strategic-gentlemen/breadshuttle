@@ -26,6 +26,10 @@ export default (
     {/* LOGIN  */}
     <Route exact path='/login' component={Login} />
     <Route exact path='/register' component={Register} />
-    <Route exact path='/register2' component={RegisterStep2} />
+    <Route exact path='/map/:id' component={MapView} />
+    <Route exact path='/edit-list/:id' component={EditList} />
+    <Route exact path='/share-list:id' component={EditList} />
+    <Route exact path='/add-list' component={AddList} />
+    <Route component={"404"} />
   </Switch>
 )
