@@ -22,28 +22,28 @@
 }
 
 .primary {
-  background-color: $main-blue;
+  background-color: $dark-green;
   color: white;
 }
 
 .secondary:hover {
-  background-color: $main-blue-shadow
+  background-color: $lime-green
 }
 
 .secondary {
-  background-color: $orange;
+  background-color: $gray;
   color: white;
 }
 
 .secondary:hover {
-  background-color: $orange-shadow
+  background-color: $white
 }
 
 .cancel {
-  background-color: $auburn;
+  background-color: $gray;
   color: white;
 }
 
 .cancel:hover {
-  background-color: $auburn-shadow
+  background-color: $white
 }
