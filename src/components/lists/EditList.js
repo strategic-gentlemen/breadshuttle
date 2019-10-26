@@ -47,6 +47,7 @@ const EditList = (props) => {
       <SubNav 
         title={`${list.title} ${props.match.params.id}`}
         add
+        addFunction={() => props.push(`/share-list/${props.match.params.id}`)}
         backButton
         goBack={() => props.push('/')}
       />

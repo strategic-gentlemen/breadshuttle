@@ -1,29 +1,29 @@
 import React from 'react';
+import NavBar from '../common/NavBar';
 import Button from '../common/Button';
 
-const Login = (props) => {
+const Register = (props) => {
   return (
     <div className='auth-container'>
+        <NavBar/>
       <div className='header-text'>
-        Log In
+        Sign Up
+      </div>
+      <div className='auth-text'>
+        <p>Add your Zipcode so we can look up stores in your area.</p>
       </div>
       <div className='auth-form-container'>
         <form className='auth-form'>
           <div>
             <div className='auth-input'>
-              <label htmlFor='email'>Email</label>
-              <input id='email' type='text'/>
-            </div>
-            <br/>
-            <div className='auth-input'>
-              <label htmlFor='password'>Password</label>
-              <input id='password' type='password'/>  
+              <label htmlFor='fname'>Zipcode</label>
+              <input id='fname' type='text'/>
             </div>
           </div>
           <div>
             <Button
-              title='Login' 
-              type='submit'>         
+              title='Create Account' 
+              type='submit'>  
             </Button>
           </div>
         </form>
@@ -32,4 +32,4 @@ const Login = (props) => {
   );
 }
 
-export default Login;
+export default Register;

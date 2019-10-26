@@ -36,7 +36,7 @@ const NavBar = (props) => {
         <ul>
           <li onClick={() => handleMenuToggle('/')}>My Lists</li>
           <li onClick={() => handleMenuToggle('/profile')}>Profile</li>
-          <li onClick={() => handleMenuToggle('/')}>Logout</li>
+          <li onClick={() => handleMenuToggle('/login')}>Logout</li>
         </ul>
       </Drawer>
     </div>

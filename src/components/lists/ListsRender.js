@@ -44,7 +44,7 @@ const mapListItems = (props) => {
 }
 
 const ListRender = (props) => {
-
+  props.testAction('is this working?')
   return (
     <div className="lists-container">
       <div>

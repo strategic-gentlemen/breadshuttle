@@ -1,0 +1,67 @@
+@import '../globalVariables.scss';
+
+.add-collaborators{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 50px;
+  width: 90vw;
+  font-size: 24px;
+  font-weight: 200;
+  
+  i {
+    font-size: 20px;
+    margin-top: 5px
+  } 
+
+}
+
+.user-card-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
+  min-height: 50px;
+  width: 90vw;
+  border-bottom: 2px solid $gray;
+
+  .email {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .user-card {
+    width: 90vw;
+  }
+
+  .user-card-expanded {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+
+    .settings {
+      width: 70vw;
+
+      h4 {
+        margin-top: 0;
+        margin-bottom: 5
+      }
+
+    }
+  }
+}
+
+.shared-with {
+  width: 90vw;
+  text-align: left;
+
+  p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0
+  }
+}
