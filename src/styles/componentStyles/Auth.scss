@@ -7,15 +7,25 @@
     // background: linear-gradient(170deg, $secondary-blue, 90%, $main-blue);
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    height: 90vh;
 
-    .auth-top{
-        height: 50%;
+    .header-text{
+        margin: 7vh;
+        font-size: 2em;
+    }
+    .auth-form-container{
+        height:100%;
+    }
+    .auth-text{
+        width: 90vw;
+        margin: auto;
+        text-align: left;
+        color: grey;
+    };
+    .auth-form{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
-
     }
     .auth-bottom{
         height: 50%;
@@ -81,11 +91,28 @@
     .icon-box{
         border-right: 1px solid $blue;
         height: 100%;
-        width: 10%;
-        box-shadow: 5px 0 5px -5px rgba(0,0,0,0.27);
-
-        };
-    a{
-        text-decoration: underline;
+        
+        .auth-input{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 90vw;
+            font-size: 1.2em;
+            
+            input{
+                font-size: 1.05em;
+                width: 100%;
+                min-height: 35px;
+                border: 1px solid grey;
+                border-radius: 2px;
+                padding-left: 10px;
+                box-sizing: border-box;
+                
+            }
+            label{
+                font-size: 1.2em;
+                margin-bottom: 4px;
+            }
+        }
     }
 }

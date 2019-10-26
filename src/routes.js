@@ -3,6 +3,7 @@ import { Switch, Route } from 'react-router';
 import ListRender from './components/lists/ListsRender';
 import Login from './components/login/Login';
 import Register from './components/register/Register';
+import RegisterStep2 from './components/register/RegisterStep2';
 import MapView from './components/map/MapView';
 import Profile from './components/users/Profile';
 import EditList from './components/lists/EditList';
@@ -19,5 +20,6 @@ export default (
     <Route exact path='/edit-list/:id' component={EditList} />
     <Route exact path='/share-list:id' component={EditList} />
     <Route exact path='/add-list' component={AddList} />
+    <Route component={"404"} />
   </Switch>
 )
